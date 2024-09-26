@@ -25,7 +25,7 @@
 <body>
 
     <h1>Sorted Articles</h1>
-    <ul id="band"></ul>
+    <ul id="bands"></ul> <!-- Corrected ID here -->
 
     <script>
         const bands = [
@@ -66,7 +66,7 @@
         const sortedBands = sortBands(bands);
 
         // Populate the unordered list with sorted band names
-        const bandList = document.getElementById('band');
+        const bandList = document.getElementById('bands'); // Use correct ID here
         sortedBands.forEach(band => {
             const li = document.createElement('li');
             li.textContent = band;
